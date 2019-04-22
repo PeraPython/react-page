@@ -1,0 +1,12 @@
+.main{
+    background-color: rgb(81, 81, 81);
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 999px){
+    .main{
+        flex-direction: column;
+    }
+}

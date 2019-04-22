@@ -1,0 +1,87 @@
+.arrow{
+    float: right;
+    margin-right: 4px;
+}
+.arrow-down-right{
+    display: inline-block;
+    margin-left: .255em;
+    margin-top: 6px;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.arrow-up{
+    display: inline-block;
+    margin-left: .255em;
+    margin-top: 4px;
+    content: "";
+    border-top: .3em solid transparent;
+    border-right: 0;
+    border-bottom: .3em solid transparent;
+    border-left: .3em solid;
+}
+.content{
+    animation: fadeInDown 2s ease-in-out;
+    -webkit-animation: fadeInDown 2s ease-in-out;
+    -moz-animation: fadeInDown 2s ease-in-out;
+    -o-animation: fadeInDown 2s ease-in-out;
+    background-color: black;
+    overflow: hidden;
+    padding: 20px 15px 20px 15px;
+}
+.right-column{
+    border: 10px solid rgb(163, 163, 163);
+    padding: 10px;
+    width: 30%; 
+}
+.link{
+    background-color: black;  
+    cursor: pointer;
+    margin-top: 3px;
+    padding: 6px 15px 6px 15px;
+}
+
+@keyframes fadeInDown {
+    from {
+        max-height: 5px;
+    }
+    to {
+        max-height: 220px;
+    }
+  }
+
+@-webkit-keyframes fadeInDown {
+    from {
+        max-height: 5px;
+    }
+    to {
+        max-height: 220px;
+    }
+  }
+
+@-moz-keyframes fadeInDown {
+    from {
+        max-height: 5px;
+    }
+    to {
+        max-height: 220px;
+    }
+  }
+
+@-o-keyframes fadeInDown {
+    from {
+        max-height: 5px;
+    }
+    to {
+        max-height: 220px;
+    }
+  }
+
+@media only screen and (max-width: 999px){
+    .right-column{
+        width: unset;
+    }
+}

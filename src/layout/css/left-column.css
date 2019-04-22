@@ -1,0 +1,36 @@
+@font-face{
+    font-family: Helvetica-Inserat;
+    src: url("Helvetica\ Inserat\ LT.ttf");
+}
+#horizontal-line{
+    background-color: black;
+    border: 0px;
+    box-shadow: 0.2px 0.2px;
+    height: 1px;
+}
+.left-column{
+    border: 10px solid rgb(204, 204, 204);
+    width: 70%;
+    padding: 10px;
+}
+.paragraph{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-indent: 35px;
+}
+#title{
+    font-family: Helvetica-Inserat;
+    margin-left: 28px;
+}
+
+@media only screen and (max-width: 999px){
+    .left-column{
+        width: unset;
+    }
+}
+
+@-moz-document url-prefix() {
+    #horizontal-line {
+      box-shadow: 1px 1px;
+    }
+}

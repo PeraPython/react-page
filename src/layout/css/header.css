@@ -1,0 +1,130 @@
+.arrow-down{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.dropdown{
+    display: inline-flex;
+    margin-left: 10px;
+}
+.dropdown-button{
+    align-items: center;
+    background-color: rgb(102, 102, 102);
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+}
+.dropdown-item{
+    margin-right: 3px;
+}
+.dropdown-list{
+    background-color: black;
+    display: inline-block;
+    font-size: 15px;
+    max-width: 150px;
+    min-width: 100px;
+    padding: 5px;
+    position: absolute;
+    animation: drop-list .5s ease-in-out;
+    -webkit-animation: drop-list .5s ease-in-out;
+    -moz-animation: drop-list .5s ease-in-out;
+    -o-animation: drop-list .5s ease-in-out;
+}
+.dropdown-list-item{
+    cursor: pointer;
+}
+.flags{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.flag-clicked{
+    opacity: 0.5;
+}
+.flag-icon{
+    border: 2px solid gray;
+    border-radius: 4px;
+    height: 15px;
+    margin-left: 10px;
+    width: 25px;
+}
+.flag-icon:hover{
+    border-color: black;
+    cursor: pointer;
+    opacity: 0.5;
+}
+header{
+    align-items: flex-end;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    height: 105px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 999px){
+    header{
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 442px){
+    .dropdown-button{
+        width: 80px;
+    }
+    .flags{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@keyframes drop-list {
+    0%   { 
+        transform-origin: left top;
+        transform: scaleY(0); 
+        }
+    100% { 
+        transform-origin: left top;
+        transform: scaleY(1); 
+        }
+  }
+
+@-webkit-keyframes drop-list {
+    0%   { 
+        transform-origin: left top;
+        transform: scaleY(0); 
+        }
+    100% { 
+        transform-origin: left top;
+        transform: scaleY(1); 
+        }
+    }
+@-moz-keyframes drop-list {
+    0%   { 
+        transform-origin: left top;
+        transform: scaleY(0); 
+        }
+    100% { 
+        transform-origin: left top;
+        transform: scaleY(1); 
+        }
+    }
+@-o-keyframes drop-list {
+    0%   { 
+        transform-origin: left top;
+        transform: scaleY(0); 
+        }
+    100% { 
+        transform-origin: left top;
+        transform: scaleY(1); 
+        }
+    }

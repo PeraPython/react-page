@@ -1,0 +1,23 @@
+.App{
+    color: white;
+    font-family: Tahoma, sans-serif;
+    max-width: 1280px;
+    min-width: 800px;
+    margin: auto;
+}
+#logo{
+    margin-top: 85px;
+    position: fixed;
+    width: 150px;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 999px){
+    .App{
+        max-width: unset;
+        min-width: unset;
+    }
+    #logo{
+        display: none;
+    }
+}
